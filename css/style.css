@@ -1,0 +1,219 @@
+/* ***************************************************************** 
+*	First View
+* ***************************************************************** */
+#fkv .fkv__inner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#fkv .fkv__inner .fkv-img {
+  width: 100%;
+  height: calc(100vh - 108px);
+}
+#fkv .fkv__inner .fkv-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#fkv .fkv__inner .fkv-text {
+  position: absolute;
+  top: 0%;
+  left: -1%;
+  background-color: #00913a;
+  display: inline-block;
+  padding: 8px 32px;
+  transform: skewX(150deg);
+}
+#fkv .fkv__inner .fkv-text h1 {
+  transform: skewX(-150deg);
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+#fkv .fkv__inner .fkv-copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 72%;
+}
+#fkv .fkv__inner .fkv-copy img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#fkv .fkv__inner .businessHours {
+  position: absolute;
+  bottom: 0%;
+  right: -3%;
+  width: 400px;
+  height: auto;
+}
+#fkv .fkv__inner .academy-name {
+  position: absolute;
+  bottom: 0%;
+  left: 1%;
+  width: 280px;
+  height: auto;
+}
+
+/* ***************************************************************** 
+*	About us
+* ***************************************************************** */
+#aboutus .aboutus-wrapper .aboutus-contents {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  padding: 80px 0;
+}
+#aboutus .aboutus-wrapper .aboutus-contents .aboutus-heading2 {
+  width: 880px;
+  background-color: #fff;
+  display: inline-block;
+  padding: 24px 40px;
+  position: relative;
+  line-height: 0;
+}
+#aboutus .aboutus-wrapper .aboutus-contents > div {
+  display: grid;
+  gap: 24px;
+}
+#aboutus .aboutus-wrapper .aboutus-contents .btn-area {
+  text-align: right;
+}
+#aboutus .aboutus-obj-right {
+  position: absolute;
+  width: 420px;
+  top: -8%;
+  right: -20%;
+  z-index: -10;
+}
+#aboutus .aboutus-obj-left {
+  position: absolute;
+  width: 520px;
+  bottom: -22%;
+  left: -22%;
+}
+
+/* ***************************************************************** 
+*	Rapsodo
+* ***************************************************************** */
+#rapsodo {
+  margin-bottom: 104px;
+}
+#rapsodo .rapsodo-title {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#rapsodo .rapsodo-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #00913a;
+  z-index: -10;
+}
+#rapsodo .rapsodo-title .title-contents {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 104px 40px;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+#rapsodo .rapsodo-title .title-contents-image {
+  width: 40%;
+}
+#rapsodo .rapsodo-title .title-contents-image img {
+  width: 240px;
+}
+#rapsodo .rapsodo-title .title-contents-text {
+  width: 60%;
+  padding: 40px;
+  background-color: #00913a;
+  color: #fff;
+}
+#rapsodo .rapsodo-contents ul {
+  display: flex;
+}
+#rapsodo .rapsodo-contents ul li {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 33.3333333333%;
+  height: 680px;
+}
+#rapsodo .rapsodo-contents ul li .rapsodo-contents-background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#rapsodo .rapsodo-contents ul li .rapsodo-contents-text {
+  position: absolute;
+  width: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#rapsodo .rapsodo-btn {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* ***************************************************************** 
+*	Price
+* ***************************************************************** */
+#price {
+  margin-bottom: 104px;
+}
+#price .price-wrapper .price-contents {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: 80px 0;
+}
+#price .price-wrapper .price-contents .price-heading2 {
+  width: 400px;
+  position: relative;
+  line-height: 0;
+}
+#price .price-wrapper .price-contents > div {
+  display: grid;
+  gap: 24px;
+}
+#price .price-obj-left {
+  position: absolute;
+  width: 250px;
+  top: -12%;
+  left: -12%;
+}
+#price .price-obj-top {
+  position: absolute;
+  width: 40px;
+  top: 3%;
+  left: 50%;
+}
+#price .price-obj-bottom {
+  position: absolute;
+  width: 280px;
+  bottom: 0%;
+  left: 40%;
+}
+#price .price-obj-right {
+  position: absolute;
+  width: 280px;
+  bottom: -30%;
+  right: -10%;
+}/*# sourceMappingURL=style.css.map */

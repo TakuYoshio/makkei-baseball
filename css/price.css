@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#subpage-explanation .obj__inner .obj-right {
+  position: absolute;
+  top: 0%;
+  right: -14%;
+  width: 280px;
+}
+#subpage-explanation .obj__inner .obj-left {
+  position: absolute;
+  top: 0%;
+  left: -14%;
+  width: 240px;
+}
+
+/* ***************************************************************** 
+*	下層ページ レッスン
+* ***************************************************************** */
+#lesson .lesson-container.diagonal-layout .image-left {
+  width: 60%;
+}
+#lesson .lesson-contents {
+  padding: 80px 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+#lesson .lesson-contents-title {
+  width: 320px;
+}
+#lesson .lesson-contents-price {
+  font-size: 28px;
+  font-weight: 500;
+  color: #00913a;
+}
+#lesson .lesson-contents-text {
+  line-height: 2;
+  padding: 40px;
+  background-color: #00913a;
+  color: #fff;
+}/*# sourceMappingURL=price.css.map */

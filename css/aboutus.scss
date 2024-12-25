@@ -1,0 +1,248 @@
+@use "variable" as *;
+
+/* ***************************************************************** 
+*	FKV
+* ***************************************************************** */
+// #aboutus-fkv {
+  
+// }
+
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#subpage-explanation {
+  & .obj__inner {
+    & .obj-right {
+      position: absolute;
+      top: 0%;
+      right: -14%;
+      width: 280px;
+    }
+    & .obj-left {
+      position: absolute;
+      top: 0%;
+      left: -14%;
+      width: 240px;
+    }
+  }
+}
+
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#profile {
+  margin-bottom: 104px;
+  & .obj__inner {
+    & .obj-01 {
+      position: absolute;
+      top: -10%;
+      right: -20%;
+      width: 144px;
+    }
+    & .obj-02 {
+      position: absolute;
+      top: 50%;
+      right: -16%;
+      transform: translateY(-50%);
+      width: 280px;
+    }
+    & .obj-03 {
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      width: 64px;
+    }
+    & .obj-04 {
+      position: absolute;
+      bottom: -40%;
+      left: -24%;
+      width: 580px;
+    }
+  }
+  & .profile-container {
+    display: flex;
+    align-items: stretch;
+    & .profile-img {
+      width: 480px;
+      height: 480px;
+      & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & .profile-contents {
+      width: calc(100% - 480px);
+      padding-left: 64px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      & .profile-title {
+        position: absolute;
+        top: 0%;
+        left: -20px;
+        display: inline-block;
+        background-color: $main-color;
+        padding: 8px 32px;
+        transform: skewX(150deg);
+        & h3 {
+          color: $color-white;
+          font-size: 28px;
+          transform: skewX(-150deg);
+        }
+      }
+      & .profile-item {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        & .profile-name {
+          display: flex;
+          align-items: flex-end;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #333;
+          gap: 16px;
+          &-jp {
+            letter-spacing: 0.1em;
+          }
+          &-en {
+            font-weight: $font-weight-bold;
+          }
+        }
+        & .text-s {
+          font-size: $font-size-p03;
+        }
+      }
+    }
+  }
+}
+
+/* ***************************************************************** 
+*	下層ページ ラプソードについて
+* ***************************************************************** */
+#aboutus-rapsodo {
+  margin-bottom: 104px;
+  & .rapsodo-title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $main-color;
+      z-index: -10;
+    }
+    & .title-contents {
+      max-width: 1080px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 104px 40px;
+      display: flex;
+      align-items: center;
+      gap: 64px;
+      &-image {
+        width: 40%;
+        & img {
+          width: 240px;
+        }
+      }
+      &-text {
+        width: 60%;
+        padding: 40px;
+        background-color: $main-color;
+        color: $color-white;
+      }
+    }
+  }
+  & .about-rapsodo-container {
+    width: 100%;
+    & ul {
+      display: grid;
+      gap: 64px;
+    }
+    & .about-rapsodo-item {
+      display: flex;
+      gap: 40px;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        & .about-rapsodo-item-images-img {
+          left: 0%;
+          clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
+        }
+        & .about-rapsodo-item-images-num {
+          left: 0%;
+        }
+      }
+      &-images {
+        width: 55%;
+        position: relative;
+        &-img {
+          position: absolute;
+          top: 0%;
+          right: 0%;
+          bottom: 0%;
+          width: 1020px;
+          height: auto;
+          object-fit: cover;
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+        }
+        &-num {
+          position: absolute;
+          width: 224px;
+          top: 0%;
+          right: 0%;
+        }
+      }
+      &-contents {
+        width: 45%;
+        padding: 80px 0;
+        &-title {
+          height: 40px;
+          font-size: 0;
+          display: inline-block;
+          margin-bottom: 32px;
+          & img {
+            height: 100%;
+            object-fit: contain;
+          } 
+        }
+      }
+    }
+  }
+}
+
+/* ***************************************************************** 
+*	下層ページ 料金について
+* ***************************************************************** */
+#price {
+  margin-bottom: 104px;
+  & .price-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    & .price-heading2 {
+      width: 360px;
+      line-height: 0;
+    }
+    & > div {
+      width: 80%;
+      min-width: 880px;
+      display: grid;
+      gap: 24px;
+    }
+    & .price-heading3 {
+      text-align: center;
+    }
+    & .p-text {
+      text-align: center;
+    }
+    & .btn-area {
+      text-align: center;
+    }
+  }
+}

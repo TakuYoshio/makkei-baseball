@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="jp">
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() );?>/responsive.css" type="text/css" media="screen, print" />
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen, print" />
-<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-<?php
-wp_deregister_script('jquery');
-wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', array(), '1.7.1');
-?>
-<?php wp_head(); ?>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <!-- Style CSS 適用 -->
+  <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/common.css'); ?>">
+  <?php /*?>トップページの場合<?php */?>
+  <?php if ( is_home() || is_front_page() ) : ?>
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/style.css'); ?>">
+  <?php endif; ?>
+  <?php /*?>固定ページの場合<?php */?>
+  <?php if ( is_page('aboutus') ): ?>
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/aboutus.css'); ?>">
+  <?php endif; ?>
+  <?php if ( is_page('price') ): ?>
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/price.css'); ?>">
+  <?php endif; ?>
+
+  <!-- font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- font style -->
+  
+  <title><?php echo bloginfo('name'); ?></title>
+  <meta name="description" content="<?php bloginfo('description'); ?>">
+  <?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-
-<!-- ヘッダー -->
-<header id="header">
-
-<!-- ヘッダー中身 -->    
-<div class="header-inner">
-
-<!-- ロゴ -->
-<?php if ( is_home() || is_front_page() ) : ?>
-<!-- トップページだけ -->
-<h1 class="logo">
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo (get_option('logo_url')) ? get_option('logo_url') : get_template_directory_uri() .'/images/logo.gif' ?>" alt="<?php bloginfo('name'); ?>" /></a>
-</h1>
-<?php else : ?>
-<!-- トップページ以外 -->
-<div class="logo">
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo (get_option('logo_url')) ? get_option('logo_url') : get_template_directory_uri() .'/images/logo.gif' ?>" alt="<?php bloginfo('name'); ?>" /></a>
-</div>
-<?php endif; ?>
-<!-- / ロゴ -->
-
-</div>    
-<!-- / ヘッダー中身 -->    
-
-</header>
-<!-- / ヘッダー -->  
-<div class="clear"></div>
-
-<!-- トップナビゲーション -->
-<nav id="nav" class="main-navigation  mincho" role="navigation">
-<?php wp_nav_menu( array( 'menu' => 'topnav', 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-</nav>
-
-<!-- / トップナビゲーション -->
-<div class="clear"></div>  
+<body>
+  <header id="header" class="header">
+    <div class="logo">
+      <a href="/" class="logo-link">
+        <img src="<?php echo get_theme_file_uri('images/2x/Logo.png'); ?>" alt="Logo" class="logo-mark">
+        <img src="<?php echo get_theme_file_uri('images/SVG/Logo-font.svg'); ?>" alt="Logo type" class="logo-type">
+      </a>
+    </div>
+    <nav class="to-pc">
+      <div class="main-menu-container">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/aboutus/')); ?>" class="menu-link">Makkei Baseball Academyとは</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/price/')); ?>" class="menu-link">料金プラン</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/voice/')); ?>" class="menu-link">利用者の声</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cta-button">
+        <a href="<?php echo esc_url(home_url('/contact/')); ?>">
+          <img src="<?php echo get_theme_file_uri('images/SVG/CTA-button.svg'); ?>" alt="CTA button">
+        </a>
+      </div>
+    </nav>
+  </header>
+  <!-- パンクズリスト -->
+  <!-- <?php breadcrumb(); ?> -->
