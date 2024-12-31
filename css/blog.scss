@@ -1,0 +1,82 @@
+@use "variable" as *;
+
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#subpage-explanation {
+  & .obj__inner {
+    & .obj-right {
+      position: absolute;
+      top: 0%;
+      right: -14%;
+      width: 280px;
+    }
+    & .obj-left {
+      position: absolute;
+      top: 0%;
+      left: -14%;
+      width: 240px;
+    }
+  }
+}
+
+/* ***************************************************************** 
+*	下層ページ ブログ
+* ***************************************************************** */
+#blog-contents {
+  margin-bottom: 104px;
+  & .article-container {
+    display: grid;
+    gap: 56px;
+    &-tab {
+      & ul {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      &-item {
+        width: 180px;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 100px;
+        border: 2px solid $main-color;
+        color: $main-color;
+        font-size: $font-size-p03;
+        font-weight: $font-weight-semi-bold;
+      }
+    }
+    &-contents {
+      & ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &-item {
+        width: calc(100% / 3);
+        padding: 24px;
+        &-text {
+          &-date {
+            font-size: 14px;
+          }
+          &-title {
+            color: $main-color;
+            margin-bottom: 16px;
+          }
+          &-desc {
+            font-size: $font-size-p03;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; /* 行数を指定 */
+          }
+        }
+      }
+    }
+  }
+}
+
+#voice-blog {
+  &.display-none {
+   display: none; 
+  }
+}

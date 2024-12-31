@@ -17,6 +17,12 @@
   <?php if ( is_page('price') ): ?>
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/price.css'); ?>">
   <?php endif; ?>
+  <?php if ( is_page('voice') ): ?>
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/voice.css'); ?>">
+  <?php endif; ?>
+  <?php if ( is_page('blog') ): ?>
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/blog.css'); ?>">
+  <?php endif; ?>
 
   <!-- font style -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,6 +53,9 @@
           </li>
           <li class="menu-item">
             <a href="<?php echo esc_url(home_url('/voice/')); ?>" class="menu-link">利用者の声</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="menu-link">ブログ</a>
           </li>
         </ul>
       </div>

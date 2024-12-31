@@ -53,6 +53,11 @@ h5 {
   font-weight: $font-weight-bold;
   line-height: 1.5;
 }
+h6 {
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+}
 p {
   font-size: 18px;
   font-weight: $font-weight-medium;
@@ -243,7 +248,6 @@ main {
         background-blend-mode: multiply; // 背景画像と色の乗算
         background-size: cover;
         background-position: center;
-        clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
       }
       &.blog {
         background: 
@@ -252,7 +256,6 @@ main {
         background-blend-mode: multiply; // 背景画像と色の乗算
         background-size: cover;
         background-position: center;
-        clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 100%);
       }
       & .voice-blog-heading3 {
         color: $color-white;
@@ -396,7 +399,7 @@ main {
   & .subpage-fkv-text {
     position: absolute;
     top: 0%;
-    left: 8%;
+    left: 18%;
     background-color: $main-color;
     display: inline-block;
     padding: 8px 32px;
@@ -414,8 +417,8 @@ main {
 *	下層ページ 説明セクション
 * ***************************************************************** */
 #subpage-explanation {
+  margin-bottom: 104px;
   &.aboutus {
-    margin-bottom: 104px;
     & .subpage-explanation-text {
       &.subpage-border-bottom {
         padding-bottom: 104px;

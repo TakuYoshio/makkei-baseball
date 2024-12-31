@@ -56,6 +56,12 @@ h5 {
   line-height: 1.5;
 }
 
+h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 p {
   font-size: 18px;
   font-weight: 500;
@@ -256,16 +262,12 @@ main {
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
 }
 #voice-blog .voice-blog-wrapper .voice-blog-contents.blog {
   background: linear-gradient(hwb(144 0% 43%/0.7), hwb(144 0% 43%/0.7)), url(../images/2x/blog-background-img.JPG);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
-  -webkit-clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 100%);
 }
 #voice-blog .voice-blog-wrapper .voice-blog-contents .voice-blog-heading3 {
   color: #fff;
@@ -390,7 +392,7 @@ main {
 #subpage-fkv .subpage-fkv-text {
   position: absolute;
   top: 0%;
-  left: 8%;
+  left: 18%;
   background-color: #00913a;
   display: inline-block;
   padding: 8px 32px;
@@ -406,7 +408,7 @@ main {
 /* ***************************************************************** 
 *	下層ページ 説明セクション
 * ***************************************************************** */
-#subpage-explanation.aboutus {
+#subpage-explanation {
   margin-bottom: 104px;
 }
 #subpage-explanation.aboutus .subpage-explanation-text.subpage-border-bottom {

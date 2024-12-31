@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#subpage-explanation .obj__inner .obj-right {
+  position: absolute;
+  top: 0%;
+  right: -14%;
+  width: 280px;
+}
+#subpage-explanation .obj__inner .obj-left {
+  position: absolute;
+  top: 0%;
+  left: -14%;
+  width: 240px;
+}
+
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#voice {
+  margin-bottom: 104px;
+}
+#voice .voice-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+#voice .voice-container ul .voice-item {
+  width: calc(50% - 40px);
+  height: auto;
+  display: flex; /* 高さを揃えるための指定 */
+  padding: 40px 40px 0;
+  gap: 24px;
+  border: 2.5px solid #00913a;
+}
+#voice .voice-container ul .voice-item-contents {
+  width: calc(100% - 104px);
+  padding-bottom: 40px;
+  display: grid;
+  gap: 16px;
+}
+#voice .voice-container ul .voice-item-contents-title {
+  color: #00913a;
+}
+#voice .voice-container ul .voice-item-contents-text {
+  font-size: 16px;
+}
+#voice .voice-container ul .voice-item-contents-user {
+  font-size: 14px;
+}
+#voice .voice-container ul .voice-item-icon {
+  width: 104px;
+  align-self: flex-end;
+  margin-bottom: -2px;
+}/*# sourceMappingURL=voice.css.map */

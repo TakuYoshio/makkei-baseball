@@ -18,6 +18,9 @@
 /* ***************************************************************** 
 *	下層ページ レッスン
 * ***************************************************************** */
+#lesson {
+  margin-bottom: 104px;
+}
 #lesson .lesson-container.diagonal-layout .image-left {
   width: 60%;
 }
@@ -42,4 +45,73 @@
   padding: 40px;
   background-color: #00913a;
   color: #fff;
+}
+
+/* ***************************************************************** 
+*	下層ページ スケジュール
+* ***************************************************************** */
+#schedule {
+  margin-bottom: 104px;
+}
+#schedule .container {
+  display: grid;
+  gap: 56px;
+}
+#schedule .schedule-title {
+  position: relative;
+}
+#schedule .schedule-title-en {
+  width: 780px;
+  margin: 0 auto;
+}
+#schedule .schedule-title-jp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, 0%);
+}
+#schedule .week-schedule {
+  width: 780px;
+  margin: 0 auto;
+}
+#schedule .reservation {
+  text-align: center;
+}
+
+/* ***************************************************************** 
+*	下層ページ 価格
+* ***************************************************************** */
+#price {
+  margin-bottom: 104px;
+}
+#price .price-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+#price .price-container ul .price-item {
+  width: calc(50% - 40px);
+  height: auto;
+  display: flex; /* 高さを揃えるための指定 */
+  flex-direction: column; /* 高さを揃えるための指定 */
+  gap: 24px;
+}
+#price .price-container ul .price-item-text-title {
+  color: #00913a;
+  margin-bottom: 16px;
+}
+#price .price-container ul .price-item-text-dsc .emphasis {
+  display: block;
+  color: #00913a;
+  font-size: 22px;
+}
+#price .price-container ul .price-item-text-dsc .emphasis.linking > span {
+  color: #333;
+  margin-left: 4px;
+}
+#price .price-container ul .price-item-text-dsc .caution-note {
+  display: block;
+  font-size: 16px;
 }/*# sourceMappingURL=price.css.map */

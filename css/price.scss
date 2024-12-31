@@ -25,6 +25,7 @@
 *	下層ページ レッスン
 * ***************************************************************** */
 #lesson {
+  margin-bottom: 104px;
   & .lesson-container {
     &.diagonal-layout {
       & .image-left {
@@ -52,6 +53,83 @@
       padding: 40px;
       background-color: $main-color;
       color: $color-white;
+    }
+  }
+}
+
+/* ***************************************************************** 
+*	下層ページ スケジュール
+* ***************************************************************** */
+#schedule {
+  margin-bottom: 104px;
+  & .container {
+    display: grid;
+    gap: 56px;
+  }
+  & .schedule-title {
+    position: relative;
+    &-en {
+      width: 780px;
+      margin: 0 auto;
+    }
+    &-jp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      transform: translate(-50%, 0%);
+    }
+  }
+  & .week-schedule {
+    width: 780px;
+    margin: 0 auto;
+  }
+  & .reservation {
+    text-align: center;
+  }
+}
+
+/* ***************************************************************** 
+*	下層ページ 価格
+* ***************************************************************** */
+#price {
+  margin-bottom: 104px;
+  & .price-container {
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      & .price-item {
+        width: calc(100% / 2 - 40px);
+        height:auto;
+        display:flex;/* 高さを揃えるための指定 */
+        flex-direction:column;/* 高さを揃えるための指定 */
+        gap: 24px;
+        &-text {
+         &-title {
+          color: $main-color;
+          margin-bottom: 16px;
+         } 
+         &-dsc {
+          & .emphasis {
+            display: block;
+            color: $main-color;
+            font-size: 22px;
+            &.linking {
+              & > span {
+                color: $font-color-normal;
+                margin-left: 4px;
+              }
+            }
+          }
+          & .caution-note {
+            display: block;
+            font-size: $font-size-p03;
+          }
+         }
+        }
+      }
     }
   }
 }
