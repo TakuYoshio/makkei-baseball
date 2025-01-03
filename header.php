@@ -22,6 +22,13 @@
   <?php endif; ?>
   <?php if ( is_page('blog') ): ?>
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/blog.css'); ?>">
+    <script src="js/blog.js"></script>
+    <script>
+      var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+      </script>
+  <?php endif; ?>
+  <?php if ( is_page('contact') ): ?>
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/contact.css'); ?>">
   <?php endif; ?>
 
   <!-- font style -->
@@ -31,6 +38,11 @@
   <!-- font style -->
   
   <title><?php echo bloginfo('name'); ?></title>
+  <style>
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+          contain-intrinsic-size: unset !important;
+      }
+  </style>
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <?php wp_head(); ?>
 </head>

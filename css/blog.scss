@@ -26,12 +26,15 @@
 #blog-contents {
   margin-bottom: 104px;
   & .article-container {
+    width: 100%;
     display: grid;
     gap: 56px;
     &-tab {
+      width: 100%;
       & ul {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 16px;
       }
       &-item {
@@ -43,24 +46,44 @@
         color: $main-color;
         font-size: $font-size-p03;
         font-weight: $font-weight-semi-bold;
+        &.active {
+          background-color: $main-color;
+          color: $color-white;
+        }
       }
     }
     &-contents {
+      width: 100%;
       & ul {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 常に3分割 */
+        gap: 32px;
       }
       &-item {
-        width: calc(100% / 3);
-        padding: 24px;
+        width: 100%;
+        padding: 16px;
+        &-thumbnail {
+          width: 100%;
+          aspect-ratio: 4 / 3;
+          object-fit: cover;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
         &-text {
+          width: 100%;
           &-date {
             font-size: 14px;
           }
           &-title {
             color: $main-color;
             margin-bottom: 16px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1; /* 行数を指定 */
           }
           &-desc {
             font-size: $font-size-p03;
@@ -68,6 +91,47 @@
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3; /* 行数を指定 */
+          }
+        }
+      }
+    }
+    &-pagination {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      & .page-numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        border: 1px solid $main-color;
+        &.current {
+          color: $color-white;
+          background-color: $main-color;
+        }
+        &.prev {
+          width: fit-content;
+          border: none;
+          font-weight: $font-weight-medium;
+          gap: 8px;
+          margin-right: 32px;
+          & img {
+            width: 8px;
+          }
+        }
+        &.next {
+          width: fit-content;
+          border: none;
+          font-weight: $font-weight-medium;
+          gap: 8px;
+          margin-left: 32px;
+          & img {
+            width: 8px;
           }
         }
       }

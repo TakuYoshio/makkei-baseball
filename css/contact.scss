@@ -1,0 +1,87 @@
+@use "variable" as *;
+
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#subpage-explanation {
+  & .obj__inner {
+    & .obj-right {
+      position: absolute;
+      top: 0%;
+      right: -14%;
+      width: 280px;
+    }
+    & .obj-left {
+      position: absolute;
+      top: 0%;
+      left: -14%;
+      width: 240px;
+    }
+  }
+}
+
+/* ***************************************************************** 
+*	お問い合わせフォーム
+* ***************************************************************** */
+#contact-form {
+  margin-bottom: 104px;
+  & .contact-form-title {
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  & .contact-form {
+    width: 80%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px;
+    border: 2px solid $main-color;
+    border-radius: 8px;
+    & .label {
+      margin-bottom: 8px;
+    }
+    & .label-req {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      & .required {
+        background-color: $main-color;
+        color: $color-white;
+        border-radius: 4px;
+        font-weight: $font-weight-regular;
+        padding: 4px 8px;
+        font-size: 12px;
+      }
+    } 
+    & .field {
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: 1px solid $main-color;
+      margin-bottom: 24px;
+    }
+    & .text-area {
+      height: 120px;
+    }
+    & .submit-container {
+      text-align: center;
+      &-btn {
+        background-color: $main-color;
+        color: $color-white;
+        border-radius: 100px;
+        padding: 12px 16px;
+        width: 320px;
+        font-size: $font-size-p02;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}
+
+input, textarea {
+  width: 100%;
+  height: 100%;
+}
+
+#voice-blog {
+  display: none;
+}

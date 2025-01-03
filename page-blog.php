@@ -47,119 +47,66 @@
     <div class="obj_inner">
       <div class="container">
         <div class="article-container">
+          <!-- 【タブ切り替え】 -->
           <div class="article-container-tab">
             <ul>
-              <li class="article-container-tab-item">すべて</li>
-              <li class="article-container-tab-item">投球理論</li>
-              <li class="article-container-tab-item">変化球</li>
-              <li class="article-container-tab-item">打撃理論</li>
-              <li class="article-container-tab-item">食事とトレーニング</li>
+              <li class="article-container-tab-item active" data-category-id="all">すべて</li>
+              <?php
+              $categories = get_categories();
+              foreach ($categories as $category) :
+              ?>
+                  <li class="article-container-tab-item" data-category-id="<?php echo $category->term_id; ?>">
+                      <?php echo $category->name; ?>
+                  </li>
+              <?php endforeach; ?>
             </ul>
           </div>
+          <!-- 【記事一覧】 -->
           <div class="article-container-contents">
-            <ul>
-              <li class="article-container-contents-item">
-                <div class="article-container-contents-item-thumbnail">
-                  <img src="<?php echo get_theme_file_uri('images/Blog/blog-thumbnail.jpg'); ?>" alt="サムネイル">
+            <?php
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            $query_args = array(
+                'posts_per_page' => 15,
+                'paged' => $paged,
+                'orderby' => 'date',
+                'order' => 'DESC',
+            );
+            $query = new WP_Query($query_args);
+            if ($query->have_posts()) : ?>
+                <ul id="articles-list">
+                    <?php while ($query->have_posts()) : $query->the_post(); ?>
+                        <li class="article-container-contents-item" data-category-ids="<?php echo implode(',', wp_list_pluck(get_the_category($post->ID), 'term_id')); ?>">
+                            <div class="article-container-contents-item-thumbnail">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                            <div class="article-container-contents-item-text">
+                                <p class="article-container-contents-item-text-date"><?php the_time('Y.m.d'); ?></p>
+                                <h6 class="article-container-contents-item-text-title"><?php the_title(); ?></h6>
+                                <p class="article-container-contents-item-text-desc"><?php echo wp_strip_all_tags(get_the_excerpt()); ?></p>
+                            </div>
+                        </li>
+                    <?php endwhile; ?>
+                </ul>
+                <!-- 【ページネーション】 -->
+                <div class="article-container-pagination">
+                    <?php
+                    echo paginate_links(array(
+                        'total' => $query->max_num_pages,
+                        'prev_text' => '<img src="' . get_theme_file_uri('images/Blog/Pagination-prev.svg') . '" alt="Prev"> <span>Back</span>',
+                        'next_text' => '<span>Next</span> <img src="' . get_theme_file_uri('images/Blog/Pagination-next.svg') . '" alt="Next">',
+                    ));
+                    ?>
                 </div>
-                <div class="article-container-contents-item-text">
-                  <p class="article-container-contents-item-text-date">
-                    2024.00.00
-                  </p>
-                  <h6 class="article-container-contents-item-text-title">
-                    ブログタイトル
-                  </h6>
-                  <p class="article-container-contents-item-text-desc">
-                    内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。
-                  </p>
-                </div>
-              </li>
-              <li class="article-container-contents-item">
-                <div class="article-container-contents-item-thumbnail">
-                  <img src="<?php echo get_theme_file_uri('images/Blog/blog-thumbnail.jpg'); ?>" alt="サムネイル">
-                </div>
-                <div class="article-container-contents-item-text">
-                  <p class="article-container-contents-item-text-date">
-                    2024.00.00
-                  </p>
-                  <h6 class="article-container-contents-item-text-title">
-                    ブログタイトル
-                  </h6>
-                  <p class="article-container-contents-item-text-desc">
-                    内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。
-                  </p>
-                </div>
-              </li>
-              <li class="article-container-contents-item">
-                <div class="article-container-contents-item-thumbnail">
-                  <img src="<?php echo get_theme_file_uri('images/Blog/blog-thumbnail.jpg'); ?>" alt="サムネイル">
-                </div>
-                <div class="article-container-contents-item-text">
-                  <p class="article-container-contents-item-text-date">
-                    2024.00.00
-                  </p>
-                  <h6 class="article-container-contents-item-text-title">
-                    ブログタイトル
-                  </h6>
-                  <p class="article-container-contents-item-text-desc">
-                    内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。
-                  </p>
-                </div>
-              </li>
-              <li class="article-container-contents-item">
-                <div class="article-container-contents-item-thumbnail">
-                  <img src="<?php echo get_theme_file_uri('images/Blog/blog-thumbnail.jpg'); ?>" alt="サムネイル">
-                </div>
-                <div class="article-container-contents-item-text">
-                  <p class="article-container-contents-item-text-date">
-                    2024.00.00
-                  </p>
-                  <h6 class="article-container-contents-item-text-title">
-                    ブログタイトル
-                  </h6>
-                  <p class="article-container-contents-item-text-desc">
-                    内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。
-                  </p>
-                </div>
-              </li>
-              <li class="article-container-contents-item">
-                <div class="article-container-contents-item-thumbnail">
-                  <img src="<?php echo get_theme_file_uri('images/Blog/blog-thumbnail.jpg'); ?>" alt="サムネイル">
-                </div>
-                <div class="article-container-contents-item-text">
-                  <p class="article-container-contents-item-text-date">
-                    2024.00.00
-                  </p>
-                  <h6 class="article-container-contents-item-text-title">
-                    ブログタイトル
-                  </h6>
-                  <p class="article-container-contents-item-text-desc">
-                    内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。
-                  </p>
-                </div>
-              </li>
-              <li class="article-container-contents-item">
-                <div class="article-container-contents-item-thumbnail">
-                  <img src="<?php echo get_theme_file_uri('images/Blog/blog-thumbnail.jpg'); ?>" alt="サムネイル">
-                </div>
-                <div class="article-container-contents-item-text">
-                  <p class="article-container-contents-item-text-date">
-                    2024.00.00
-                  </p>
-                  <h6 class="article-container-contents-item-text-title">
-                    ブログタイトル
-                  </h6>
-                  <p class="article-container-contents-item-text-desc">
-                    内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。内容を表示する。
-                  </p>
-                </div>
-              </li>
-            </ul>
+            <?php else : ?>
+                <p>記事が見つかりませんでした。</p>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
+
 </main>
 
 <!-- Footer -->
