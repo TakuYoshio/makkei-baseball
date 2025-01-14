@@ -1,28 +1,96 @@
 @charset "UTF-8";
 /* ***************************************************************** 
+*	Media Query
+* ***************************************************************** */
+/* ***************************************************************** 
 *	下層ページ 説明セクション
 * ***************************************************************** */
-#subpage-explanation .obj__inner .obj-right {
-  position: absolute;
-  top: 0%;
-  right: -14%;
-  width: 280px;
-}
-#subpage-explanation .obj__inner .obj-left {
-  position: absolute;
-  top: 0%;
-  left: -14%;
-  width: 240px;
-}
-
 /* ***************************************************************** 
 *	下層ページ レッスン
 * ***************************************************************** */
-#lesson {
-  margin-bottom: 104px;
+#lesson .price-object-topLeft {
+  position: absolute;
+  width: 240px;
+  top: -20%;
+  left: -6%;
+}
+@media (max-width: 768px) {
+  #lesson .price-object-topLeft {
+    width: 160px;
+    top: -8%;
+  }
+}
+@media (max-width: 460px) {
+  #lesson .price-object-topLeft {
+    width: 104px;
+    top: -4%;
+  }
+}
+#lesson .price-object-topRight {
+  position: absolute;
+  width: 80px;
+  top: -8%;
+  right: 20%;
+}
+@media (max-width: 768px) {
+  #lesson .price-object-topRight {
+    width: 64px;
+    top: 0%;
+    right: 16%;
+  }
+}
+@media (max-width: 460px) {
+  #lesson .price-object-topRight {
+    width: 48px;
+    top: 2%;
+    right: 4%;
+  }
+}
+#lesson .price-object-bottomLeft {
+  position: absolute;
+  width: 136px;
+  bottom: -10%;
+  left: 6%;
+}
+@media (max-width: 768px) {
+  #lesson .price-object-bottomLeft {
+    width: 104px;
+    bottom: 0%;
+    left: -2%;
+  }
+}
+@media (max-width: 460px) {
+  #lesson .price-object-bottomLeft {
+    width: 80px;
+    bottom: -2%;
+    z-index: -10;
+  }
+}
+#lesson .price-object-bottomRight {
+  position: absolute;
+  width: 160px;
+  bottom: -8%;
+  right: 0%;
+}
+@media (max-width: 768px) {
+  #lesson .price-object-bottomRight {
+    width: 104px;
+    bottom: 8%;
+    right: -2%;
+  }
+}
+@media (max-width: 460px) {
+  #lesson .price-object-bottomRight {
+    width: 64px;
+  }
 }
 #lesson .lesson-container.diagonal-layout .image-left {
   width: 60%;
+}
+@media (max-width: 768px) {
+  #lesson .lesson-container.diagonal-layout .image-left {
+    width: 100%;
+  }
 }
 #lesson .lesson-contents {
   padding: 80px 0;
@@ -32,13 +100,41 @@
   align-items: center;
   gap: 32px;
 }
+@media (max-width: 768px) {
+  #lesson .lesson-contents {
+    width: 100%;
+    padding: 0;
+    margin-top: 32px;
+    gap: 24px;
+  }
+}
 #lesson .lesson-contents-title {
   width: 320px;
+}
+@media (max-width: 768px) {
+  #lesson .lesson-contents-title {
+    width: 320px;
+  }
+}
+@media (max-width: 460px) {
+  #lesson .lesson-contents-title {
+    width: 280px;
+  }
 }
 #lesson .lesson-contents-price {
   font-size: 28px;
   font-weight: 500;
   color: #00913a;
+}
+@media (max-width: 768px) {
+  #lesson .lesson-contents-price {
+    font-size: 24px;
+  }
+}
+@media (max-width: 460px) {
+  #lesson .lesson-contents-price {
+    font-size: 20px;
+  }
 }
 #lesson .lesson-contents-text {
   line-height: 2;
@@ -46,23 +142,55 @@
   background-color: #00913a;
   color: #fff;
 }
+@media (max-width: 460px) {
+  #lesson .lesson-contents-text {
+    width: 100%;
+    padding: 40px;
+  }
+}
 
 /* ***************************************************************** 
 *	下層ページ スケジュール
 * ***************************************************************** */
-#schedule {
-  margin-bottom: 104px;
+#schedule .schedule-object-bottomRight {
+  position: absolute;
+  width: 40px;
+  bottom: 5%;
+  right: 0%;
+}
+@media (max-width: 768px) {
+  #schedule .schedule-object-bottomRight {
+    width: 32px;
+  }
+}
+@media (max-width: 460px) {
+  #schedule .schedule-object-bottomRight {
+    width: 28px;
+  }
 }
 #schedule .container {
   display: grid;
   gap: 56px;
 }
+@media (max-width: 768px) {
+  #schedule .container {
+    gap: 32px;
+  }
+}
+@media (max-width: 460px) {
+  #schedule .container {
+    gap: 24px;
+  }
+}
 #schedule .schedule-title {
   position: relative;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  height: auto;
 }
 #schedule .schedule-title-en {
-  width: 780px;
-  margin: 0 auto;
+  width: 100%;
 }
 #schedule .schedule-title-jp {
   position: absolute;
@@ -71,8 +199,15 @@
   width: 200px;
   transform: translate(-50%, 0%);
 }
+@media (max-width: 460px) {
+  #schedule .schedule-title-jp {
+    width: 180px;
+    transform: translate(-50%, -20%);
+  }
+}
 #schedule .week-schedule {
-  width: 780px;
+  max-width: 780px;
+  width: 100%;
   margin: 0 auto;
 }
 #schedule .reservation {
@@ -82,14 +217,130 @@
 /* ***************************************************************** 
 *	下層ページ 価格
 * ***************************************************************** */
-#price {
-  margin-bottom: 104px;
+#price .price-object-01 {
+  position: absolute;
+  width: 24px;
+  top: 5%;
+  left: 0%;
+}
+@media (max-width: 768px) {
+  #price .price-object-01 {
+    width: 16px;
+    z-index: -10;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-object-01 {
+    width: 16px;
+  }
+}
+#price .price-object-02 {
+  position: absolute;
+  width: 200px;
+  top: 35%;
+  left: -8%;
+}
+@media (max-width: 768px) {
+  #price .price-object-02 {
+    width: 124px;
+    left: -12%;
+    z-index: -10;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-object-02 {
+    width: 96px;
+    left: unset;
+    right: -8%;
+  }
+}
+#price .price-object-03 {
+  position: absolute;
+  width: 28px;
+  bottom: 20%;
+  left: 3%;
+}
+@media (max-width: 768px) {
+  #price .price-object-03 {
+    width: 24px;
+    z-index: -10;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-object-03 {
+    width: 20px;
+  }
+}
+#price .price-object-04 {
+  position: absolute;
+  width: 24px;
+  bottom: 35%;
+  right: 0%;
+}
+@media (max-width: 768px) {
+  #price .price-object-04 {
+    width: 20px;
+    z-index: -10;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-object-04 {
+    width: 16px;
+  }
+}
+#price .price-object-05 {
+  position: absolute;
+  width: 120px;
+  bottom: 0%;
+  left: 0%;
+}
+@media (max-width: 768px) {
+  #price .price-object-05 {
+    width: 80px;
+    bottom: -3%;
+    left: -6%;
+    z-index: -10;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-object-05 {
+    width: 64px;
+  }
+}
+#price .price-object-06 {
+  position: absolute;
+  width: 240px;
+  bottom: 0%;
+  right: 0%;
+}
+@media (max-width: 768px) {
+  #price .price-object-06 {
+    width: 144px;
+    bottom: -1%;
+    right: -8%;
+    z-index: -10;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-object-06 {
+    width: 104px;
+  }
 }
 #price .price-container ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  #price .price-container ul {
+    gap: 32px;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-container ul {
+    gap: 24px;
+  }
 }
 #price .price-container ul .price-item {
   width: calc(50% - 40px);
@@ -98,14 +349,39 @@
   flex-direction: column; /* 高さを揃えるための指定 */
   gap: 24px;
 }
+@media (max-width: 768px) {
+  #price .price-container ul .price-item {
+    width: calc(50% - 32px);
+  }
+}
+@media (max-width: 460px) {
+  #price .price-container ul .price-item {
+    width: 90%;
+  }
+}
 #price .price-container ul .price-item-text-title {
   color: #00913a;
   margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  #price .price-container ul .price-item-text-title {
+    margin-bottom: 12px;
+  }
 }
 #price .price-container ul .price-item-text-dsc .emphasis {
   display: block;
   color: #00913a;
   font-size: 22px;
+}
+@media (max-width: 768px) {
+  #price .price-container ul .price-item-text-dsc .emphasis {
+    font-size: 18px;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-container ul .price-item-text-dsc .emphasis {
+    font-size: 16px;
+  }
 }
 #price .price-container ul .price-item-text-dsc .emphasis.linking > span {
   color: #333;
@@ -114,4 +390,14 @@
 #price .price-container ul .price-item-text-dsc .caution-note {
   display: block;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  #price .price-container ul .price-item-text-dsc .caution-note {
+    font-size: 14px;
+  }
+}
+@media (max-width: 460px) {
+  #price .price-container ul .price-item-text-dsc .caution-note {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=price.css.map */

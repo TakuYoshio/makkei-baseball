@@ -61,7 +61,7 @@
                 </p>
               </div>
               <div class="voice-item-icon">
-                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-b.svg'); ?>" alt="Voice user icon">
+                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-a.svg'); ?>" alt="Voice user icon">
               </div>
             </li>
             <li class="voice-item">
@@ -79,7 +79,7 @@
                 </p>
               </div>
               <div class="voice-item-icon">
-                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-a.svg'); ?>" alt="Voice user icon">
+                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-b.svg'); ?>" alt="Voice user icon">
               </div>
             </li>
             <li class="voice-item">
@@ -117,7 +117,7 @@
                 </p>
               </div>
               <div class="voice-item-icon">
-                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-c.svg'); ?>" alt="Voice user icon">
+                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-d.svg'); ?>" alt="Voice user icon">
               </div>
             </li>
             <li class="voice-item">
@@ -139,7 +139,7 @@
                 </p>
               </div>
               <div class="voice-item-icon">
-                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-d.svg'); ?>" alt="Voice user icon">
+                <img src="<?php echo get_theme_file_uri('images/Voice/Voice-c.svg'); ?>" alt="Voice user icon">
               </div>
             </li>
             <li class="voice-item">
@@ -166,6 +166,24 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="voice-object-01">
+        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-obj-01.svg'); ?>" alt="Object">
+      </div>
+      <div class="voice-object-02">
+        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-obj-02.svg'); ?>" alt="Object">
+      </div>
+      <div class="voice-object-03">
+        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-obj-03.svg'); ?>" alt="Object">
+      </div>
+      <div class="voice-object-04">
+        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-obj-04.svg'); ?>" alt="Object">
+      </div>
+      <div class="voice-object-05">
+        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-obj-05.svg'); ?>" alt="Object">
+      </div>
+      <div class="voice-object-06">
+        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-obj-06.svg'); ?>" alt="Object">
       </div>
     </div>
   </section>

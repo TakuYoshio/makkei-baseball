@@ -3,28 +3,101 @@
 /* ***************************************************************** 
 *	下層ページ 説明セクション
 * ***************************************************************** */
-#subpage-explanation {
-  & .obj__inner {
-    & .obj-right {
-      position: absolute;
-      top: 0%;
-      right: -14%;
-      width: 280px;
-    }
-    & .obj-left {
-      position: absolute;
-      top: 0%;
-      left: -14%;
-      width: 240px;
-    }
-  }
-}
+// #subpage-explanation {
+//   & .obj__inner {
+//     & .obj-right {
+//       position: absolute;
+//       top: 0%;
+//       right: -14%;
+//       width: 280px;
+//     }
+//     & .obj-left {
+//       position: absolute;
+//       top: 0%;
+//       left: -14%;
+//       width: 240px;
+//     }
+//   }
+// }
 
 /* ***************************************************************** 
 *	下層ページ 説明セクション
 * ***************************************************************** */
 #voice {
-  margin-bottom: 104px;
+  & .voice-object-01 {
+    position: absolute;
+    width: 48px;
+    top: 5%;
+    left: 0%;
+    @include max(md) {
+      width: 40px;
+      left: -2%;
+    }
+    @include max(sm) {
+      width: 32px;
+    }
+  }
+  & .voice-object-02 {
+    position: absolute;
+    width: 220px;
+    top: 5%;
+    right: -12%;
+    @include max(md) {
+      width: 144px;
+    }
+    @include max(sm) {
+      width: 104px;
+    }
+  }
+  & .voice-object-03 {
+    position: absolute;
+    width: 80px;
+    top: 35%;
+    left: 0%;
+    @include max(md) {
+      width: 64px;
+    }
+    @include max(sm) {
+      width: 48px;
+    }
+  }
+  & .voice-object-04 {
+    position: absolute;
+    width: 80px;
+    top: 65%;
+    right: 0%;
+    @include max(md) {
+      width: 64px;
+    }
+    @include max(sm) {
+      width: 48px;
+    }
+  }
+  & .voice-object-05 {
+    position: absolute;
+    width: 220px;
+    bottom: 0%;
+    left: -8%;
+    @include max(md) {
+      width: 144px;
+      left: -12%;
+    }
+    @include max(sm) {
+      width: 104px;
+    }
+  }
+  & .voice-object-06 {
+    position: absolute;
+    width: 32px;
+    bottom: 8%;
+    right: 0%;
+    @include max(md) {
+      width: 28px;
+    }
+    @include max(sm) {
+      width: 24px;
+    }
+  }
   & .voice-container {
     & ul {
       display: flex;
@@ -38,25 +111,57 @@
         padding: 40px 40px 0;
         gap: 24px;
         border: 2.5px solid $main-color;
+        @include max(md) {
+          width: 100%;
+        }
+        @include max(sm) {
+          flex-direction: column;
+          gap: 0;
+        }
         &-contents {
           width: calc(100% - 104px);
           padding-bottom: 40px;
           display: grid;
           gap: 16px;
+          @include max(md) {
+            width: calc(100% - 80px);
+          }
+          @include max(sm) {
+            padding-bottom: 0;
+            width: 100%;
+          }
           &-title {
             color: $main-color;
           }
           &-text {
             font-size: $font-size-p03;
+            @include max(md) {
+              font-size: $font-size-p03-tab;
+            }
+            @include max(sm) {
+              font-size: $font-size-p03-sp;
+            }
           }
           &-user {
             font-size: 14px;
+            @include max(md) {
+              font-size: 13px;
+            }
+            @include max(sm) {
+              font-size: 12px;
+            }
           }
         }
         &-icon {
           width: 104px;
           align-self: flex-end;
           margin-bottom: -2px;
+          @include max(md) {
+            width: 80px;
+          }
+          @include max(sm) {
+            width: 64px;
+          }
         }
       }
     }

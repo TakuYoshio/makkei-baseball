@@ -71,6 +71,18 @@
           </div>
         </div>
       </div>
+      <div class="price-object-topLeft">
+        <img src="<?php echo get_theme_file_uri('images/Price/price-lesson-topLeft.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-topRight">
+        <img src="<?php echo get_theme_file_uri('images/Price/price-lesson-topRight_1.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-bottomLeft">
+        <img src="<?php echo get_theme_file_uri('images/Price/price-lesson-bottomLeft.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-bottomRight">
+        <img src="<?php echo get_theme_file_uri('images/Price/price-lesson-bottomRight.svg'); ?>" alt="Object">
+      </div>
     </div>
   </section>
   <section id="schedule">
@@ -88,13 +100,16 @@
           <img src="<?php echo get_theme_file_uri('images/Price/スケジュール.jpg'); ?>" alt="スケジュール">
         </div>
         <div class="reservation">
-          <a href="" class="primary-btn">
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="primary-btn">
             <div class="primary-btn-text">詳しく見る</div>
             <div class="primary-btn-icon">
               <img src="<?php echo get_theme_file_uri('images/SVG/Arrow.svg'); ?>" alt="Button icon">
             </div>
           </a>
         </div>
+      </div>
+      <div class="schedule-object-bottomRight">
+        <img src="<?php echo get_theme_file_uri('images/Price/Plan-obj-01.svg'); ?>" alt="Object">
       </div>
     </div>
   </section>
@@ -173,6 +188,24 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="price-object-01">
+        <img src="<?php echo get_theme_file_uri('images/Price/Plan-obj-01.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-02">
+        <img src="<?php echo get_theme_file_uri('images/Price/Plan-obj-02.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-03">
+        <img src="<?php echo get_theme_file_uri('images/Price/Plan-obj-03.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-04">
+        <img src="<?php echo get_theme_file_uri('images/Price/Plan-obj-04.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-05">
+        <img src="<?php echo get_theme_file_uri('images/Price/Plan-obj-05.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-06">
+        <img src="<?php echo get_theme_file_uri('images/Price/Plan-obj-06.svg'); ?>" alt="Object">
       </div>
     </div>
   </section>

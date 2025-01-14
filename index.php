@@ -5,7 +5,8 @@
     <section id="fkv">
       <div class="fkv__inner">
         <div class="fkv-img">
-          <img src="<?php echo get_theme_file_uri('images/2x/FKV-image.jpg'); ?>" alt="FKV">
+          <img src="<?php echo get_theme_file_uri('images/2x/FKV-image-left.jpg'); ?>" alt="FKV">
+          <img src="<?php echo get_theme_file_uri('images/2x/FKV-image-right.jpg'); ?>" alt="FKV">
         </div>
         <div class="fkv-text">
           <h1>秋田県大館市の野球教室</h1>
@@ -44,7 +45,7 @@
                   上のレベルで活躍するために、データを元にした①計測 ②現状把握 ③目標設定 ④課題克服、この4つのサイクルをベースに、1人でも多くのアスリートのパフォーマンスを上げることをmissionとして掲げております。
                 </p>
                 <div class="btn-area">
-                  <a href="" class="primary-btn">
+                  <a href="<?php echo esc_url(home_url('/aboutus/')); ?>" class="primary-btn">
                     <div class="primary-btn-text">詳しく見る</div>
                     <div class="primary-btn-icon">
                       <img src="<?php echo get_theme_file_uri('images/SVG/Arrow.svg'); ?>" alt="Button icon">
@@ -94,8 +95,8 @@
         </ul>
       </div>
       <div class="rapsodo-btn">
-        <a href="#" class="secondary-btn">
-        <div class="secondary-btn-text">ラプソードについてもっと知る</div>
+        <a href="<?php echo esc_url(home_url('/aboutus/')); ?>" class="secondary-btn">
+          <div class="secondary-btn-text">ラプソードについてもっと知る</div>
           <div class="secondary-btn-icon">
             <img src="<?php echo get_theme_file_uri('images/SVG/Arrow.svg'); ?>" alt="Button icon">
           </div>
@@ -125,7 +126,7 @@
                   料金の詳細は以下のボタンからご確認いただけます。お気軽にご相談ください。
                 </p>
                 <div class="btn-area">
-                  <a href="" class="primary-btn">
+                  <a href="<?php echo esc_url(home_url('/price/')); ?>" class="primary-btn">
                     <div class="primary-btn-text">詳しく見る</div>
                     <div class="primary-btn-icon">
                       <img src="<?php echo get_theme_file_uri('images/SVG/Arrow.svg'); ?>" alt="Button icon">

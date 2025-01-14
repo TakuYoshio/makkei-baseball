@@ -1,25 +1,110 @@
 @charset "UTF-8";
 /* ***************************************************************** 
-*	下層ページ 説明セクション
+*	Media Query
 * ***************************************************************** */
-#subpage-explanation .obj__inner .obj-right {
-  position: absolute;
-  top: 0%;
-  right: -14%;
-  width: 280px;
-}
-#subpage-explanation .obj__inner .obj-left {
-  position: absolute;
-  top: 0%;
-  left: -14%;
-  width: 240px;
-}
-
 /* ***************************************************************** 
 *	下層ページ 説明セクション
 * ***************************************************************** */
-#voice {
-  margin-bottom: 104px;
+/* ***************************************************************** 
+*	下層ページ 説明セクション
+* ***************************************************************** */
+#voice .voice-object-01 {
+  position: absolute;
+  width: 48px;
+  top: 5%;
+  left: 0%;
+}
+@media (max-width: 768px) {
+  #voice .voice-object-01 {
+    width: 40px;
+    left: -2%;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-object-01 {
+    width: 32px;
+  }
+}
+#voice .voice-object-02 {
+  position: absolute;
+  width: 220px;
+  top: 5%;
+  right: -12%;
+}
+@media (max-width: 768px) {
+  #voice .voice-object-02 {
+    width: 144px;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-object-02 {
+    width: 104px;
+  }
+}
+#voice .voice-object-03 {
+  position: absolute;
+  width: 80px;
+  top: 35%;
+  left: 0%;
+}
+@media (max-width: 768px) {
+  #voice .voice-object-03 {
+    width: 64px;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-object-03 {
+    width: 48px;
+  }
+}
+#voice .voice-object-04 {
+  position: absolute;
+  width: 80px;
+  top: 65%;
+  right: 0%;
+}
+@media (max-width: 768px) {
+  #voice .voice-object-04 {
+    width: 64px;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-object-04 {
+    width: 48px;
+  }
+}
+#voice .voice-object-05 {
+  position: absolute;
+  width: 220px;
+  bottom: 0%;
+  left: -8%;
+}
+@media (max-width: 768px) {
+  #voice .voice-object-05 {
+    width: 144px;
+    left: -12%;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-object-05 {
+    width: 104px;
+  }
+}
+#voice .voice-object-06 {
+  position: absolute;
+  width: 32px;
+  bottom: 8%;
+  right: 0%;
+}
+@media (max-width: 768px) {
+  #voice .voice-object-06 {
+    width: 28px;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-object-06 {
+    width: 24px;
+  }
 }
 #voice .voice-container ul {
   display: flex;
@@ -35,11 +120,33 @@
   gap: 24px;
   border: 2.5px solid #00913a;
 }
+@media (max-width: 768px) {
+  #voice .voice-container ul .voice-item {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-container ul .voice-item {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 #voice .voice-container ul .voice-item-contents {
   width: calc(100% - 104px);
   padding-bottom: 40px;
   display: grid;
   gap: 16px;
+}
+@media (max-width: 768px) {
+  #voice .voice-container ul .voice-item-contents {
+    width: calc(100% - 80px);
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-container ul .voice-item-contents {
+    padding-bottom: 0;
+    width: 100%;
+  }
 }
 #voice .voice-container ul .voice-item-contents-title {
   color: #00913a;
@@ -47,11 +154,41 @@
 #voice .voice-container ul .voice-item-contents-text {
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  #voice .voice-container ul .voice-item-contents-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-container ul .voice-item-contents-text {
+    font-size: 12px;
+  }
+}
 #voice .voice-container ul .voice-item-contents-user {
   font-size: 14px;
+}
+@media (max-width: 768px) {
+  #voice .voice-container ul .voice-item-contents-user {
+    font-size: 13px;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-container ul .voice-item-contents-user {
+    font-size: 12px;
+  }
 }
 #voice .voice-container ul .voice-item-icon {
   width: 104px;
   align-self: flex-end;
   margin-bottom: -2px;
+}
+@media (max-width: 768px) {
+  #voice .voice-container ul .voice-item-icon {
+    width: 80px;
+  }
+}
+@media (max-width: 460px) {
+  #voice .voice-container ul .voice-item-icon {
+    width: 64px;
+  }
 }/*# sourceMappingURL=voice.css.map */

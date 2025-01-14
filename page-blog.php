@@ -44,7 +44,7 @@
     </div>
   </section>
   <section id="blog-contents">
-    <div class="obj_inner">
+    <div class="obj__inner">
       <div class="container">
         <div class="article-container">
           <!-- 【タブ切り替え】 -->
@@ -76,6 +76,7 @@
                 <ul id="articles-list">
                     <?php while ($query->have_posts()) : $query->the_post(); ?>
                         <li class="article-container-contents-item" data-category-ids="<?php echo implode(',', wp_list_pluck(get_the_category($post->ID), 'term_id')); ?>">
+                          <a href="<?php the_permalink(); ?>" class="article-link">
                             <div class="article-container-contents-item-thumbnail">
                                 <?php the_post_thumbnail(); ?>
                             </div>
@@ -84,6 +85,7 @@
                                 <h6 class="article-container-contents-item-text-title"><?php the_title(); ?></h6>
                                 <p class="article-container-contents-item-text-desc"><?php echo wp_strip_all_tags(get_the_excerpt()); ?></p>
                             </div>
+                          </a>
                         </li>
                     <?php endwhile; ?>
                 </ul>
@@ -103,6 +105,24 @@
             <?php wp_reset_postdata(); ?>
           </div>
         </div>
+      </div>
+      <div class="blog-object-01">
+        <img src="<?php echo get_theme_file_uri('images/Blog/Blog-obj-01.svg'); ?>" alt="Object">
+      </div>
+      <div class="blog-object-02">
+        <img src="<?php echo get_theme_file_uri('images/Blog/Blog-obj-02.svg'); ?>" alt="Object">
+      </div>
+      <div class="blog-object-03">
+        <img src="<?php echo get_theme_file_uri('images/Blog/Blog-obj-03.svg'); ?>" alt="Object">
+      </div>
+      <div class="blog-object-04">
+        <img src="<?php echo get_theme_file_uri('images/Blog/Blog-obj-04.svg'); ?>" alt="Object">
+      </div>
+      <div class="blog-object-05">
+        <img src="<?php echo get_theme_file_uri('images/Blog/Blog-obj-05.svg'); ?>" alt="Object">
+      </div>
+      <div class="blog-object-06">
+        <img src="<?php echo get_theme_file_uri('images/Blog/Blog-obj-06.svg'); ?>" alt="Object">
       </div>
     </div>
 </section>

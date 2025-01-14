@@ -112,7 +112,13 @@
     <div class="container">
       <div class="about-rapsodo-container">
         <ul>
-          <li class="about-rapsodo-item">
+          <li class="about-rapsodo-item obj">
+            <div class="obj-01">
+              <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-rapsode-top.svg'); ?>" alt="Object">
+            </div>
+            <div class="obj-02">
+              <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-rapsode-top-02.svg'); ?>" alt="Object">
+            </div>
             <div class="about-rapsodo-item-images">
               <div class="about-rapsodo-item-images-img">
                 <img src="<?php echo get_theme_file_uri('images/Aboutus/バッティング.JPG'); ?>" alt="バッティング">
@@ -128,7 +134,7 @@
               <div class="about-rapsodo-item-contents-text">
                 <p>
                   打撃の質を科学的に向上させるためのツール、それが「Rapsodo Hitting」です。<br>
-                  計測可能な打球速度、打球角度、飛距離、回転数、回転方向などのデータを通じて、自分のスイングの強みと課題を明確化。<br>
+                  計測可能な<span class="accent">打球速度、打球角度、飛距離、回転数、回転方向</span>などのデータを通じて、自分のスイングの強みと課題を明確化。<br>
                   さらに、打球軌道の予測機能を活用することで、理想的な打球を目指すための具体的な改善点を発見できます。<br>
                   当施設では、このデータをもとにした個別指導を実施。<br>
                   感覚に頼らず、理論に基づいた練習で、あなたの打撃力を次のレベルへ引き上げます。
@@ -136,7 +142,13 @@
               </div>
             </div>
           </li>
-          <li class="about-rapsodo-item">
+          <li class="about-rapsodo-item obj">
+            <div class="obj-03">
+              <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-rapsode-left.svg'); ?>" alt="Object">
+            </div>
+            <div class="obj-04">
+              <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-rapsode-right.svg'); ?>" alt="Object">
+            </div>
             <div class="about-rapsodo-item-images">
               <div class="about-rapsodo-item-images-img">
                 <img src="<?php echo get_theme_file_uri('images/Aboutus/ピッチング.JPG'); ?>" alt="バッティング">
@@ -152,7 +164,7 @@
               <div class="about-rapsodo-item-contents-text">
                 <p>
                   投球を科学する、プロも認める「Rapsodo Pitching」。<br>
-                  球速や回転数、縦横の変化量、回転軸の角度や効率、リリースポイントの位置や角度など、詳細なデータをリアルタイムで取得。<br>
+                  <span class="accent">球速や回転数、縦横の変化量、回転軸の角度や効率、リリースポイントの位置や角度</span>など、詳細なデータをリアルタイムで取得。<br>
                   これにより、理想的なボールの握り方や投げ方を具体的に理解し、実践的に改善することが可能です。<br>
                   また、投球軌道の予測機能を使うことで、自分の投球が打者にどのように見えるかを確認し、より戦略的な投球を目指せます。<br>
                   科学的なアプローチで、あなたのピッチングを進化させましょう。
@@ -160,7 +172,10 @@
               </div>
             </div>
           </li>
-          <li class="about-rapsodo-item">
+          <li class="about-rapsodo-item obj">
+            <div class="obj-05">
+              <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-rapsode-bottom.svg'); ?>" alt="Object">
+            </div>
             <div class="about-rapsodo-item-images">
               <div class="about-rapsodo-item-images-img">
                 <img src="<?php echo get_theme_file_uri('images/Aboutus/スローモーション.JPG'); ?>" alt="バッティング">
@@ -176,7 +191,7 @@
               <div class="about-rapsodo-item-contents-text">
                 <p>
                   ハイスピードカメラ「Insight」によるスローモーション映像解析で、細部まで見逃さない練習を実現。<br>
-                  Rapsodoと連動して、変化球のリリース時の手の動きや、スイングの最適なタイミングを解明。<br>
+                  Rapsodoと連動して、<span class="accent">変化球のリリース時の手の動きや、スイングの最適なタイミング</span>を解明。<br>
                   瞬時に撮影される高解像度の映像が、これまで見えなかったフォームの課題を浮き彫りにします。<br>
                   プロ選手のような精密なフォーム改良を目指すなら、このスローモーション解析が鍵となります。
                 </p>
@@ -213,6 +228,18 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="price-object-topLeft">
+        <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-price-top-left.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-topRight">
+        <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-price-top-right.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-bottomLeft">
+        <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-price-bottom-left.svg'); ?>" alt="Object">
+      </div>
+      <div class="price-object-bottomRight">
+        <img src="<?php echo get_theme_file_uri('images/Aboutus/aboutus-price-bottom-right.svg'); ?>" alt="Object">
       </div>
     </div>
   </section>

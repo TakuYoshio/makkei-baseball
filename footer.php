@@ -5,7 +5,7 @@
       <p class="voice-blog-text">
         スクールでの体験談や成果をご紹介！
       </p>
-      <a href="" class="tertiary-btn">
+      <a href="<?php echo esc_url(home_url('/voice/')); ?>" class="tertiary-btn">
         <div class="tertiary-btn-text">詳しく見る</div>
         <div class="tertiary-btn-icon">
           <img src="<?php echo get_theme_file_uri('images/SVG/Arrow-teriary.svg'); ?>" alt="Button icon">
@@ -17,7 +17,7 @@
       <p class="voice-blog-text">
         指導内容を公開！特殊変化球や練習ギアの使い方も解説
       </p>
-      <a href="" class="tertiary-btn">
+      <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="tertiary-btn">
         <div class="tertiary-btn-text">詳しく見る</div>
         <div class="tertiary-btn-icon">
           <img src="<?php echo get_theme_file_uri('images/SVG/Arrow-teriary.svg'); ?>" alt="Button icon">
@@ -41,13 +41,25 @@
               マッケイベースボールアカデミーへ<br>
               お気軽にご連絡ください。
             </p>
-            <a href="" class="tertiary-btn">
+            <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="tertiary-btn">
               <div class="tertiary-btn-text">詳しく見る</div>
               <div class="tertiary-btn-icon">
                 <img src="<?php echo get_theme_file_uri('images/SVG/Arrow-teriary.svg'); ?>" alt="Button icon">
               </div>
             </a>
           </div>
+        </div>
+        <div class="cta-object-top">
+          <img src="<?php echo get_theme_file_uri('images/SVG/cta-obj-top.svg'); ?>" alt="Object">
+        </div>
+        <div class="cta-object-right">
+          <img src="<?php echo get_theme_file_uri('images/SVG/cta-obj-right.svg'); ?>" alt="Object">
+        </div>
+        <div class="cta-object-bottom">
+          <img src="<?php echo get_theme_file_uri('images/SVG/cta-obj-bottom.svg'); ?>" alt="Object">
+        </div>
+        <div class="cta-object-left">
+          <img src="<?php echo get_theme_file_uri('images/SVG/cta-obj-left.svg'); ?>" alt="Object">
         </div>
       </div>
     </section>
@@ -69,16 +81,16 @@
         <div class="footer-nav">
           <ul class="footer-menu">
             <li class="footer-menu-item">
-              <a href="#" class="menu-link">Makkei Baseball Academyとは</a>
+              <a href="<?php echo esc_url(home_url('/aboutus/')); ?>" class="menu-link">Makkei Baseball Academyとは</a>
             </li>
             <li class="footer-menu-item">
-              <a href="#" class="menu-link">料金プラン</a>
+              <a href="<?php echo esc_url(home_url('/price/')); ?>" class="menu-link">料金プラン</a>
             </li>
             <li class="footer-menu-item">
-              <a href="#" class="menu-link">利用者の声</a>
+              <a href="<?php echo esc_url(home_url('/voice/')); ?>" class="menu-link">利用者の声</a>
             </li>
             <li class="footer-menu-item">
-              <a href="#" class="menu-link">お問い合わせ</a>
+              <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="menu-link">お問い合わせ</a>
             </li>
           </ul>
         </div>

@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
   <!-- Style CSS 適用 -->
   <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/common.css'); ?>">
+  <script src="js/main.js"></script>
   <?php /*?>トップページの場合<?php */?>
   <?php if ( is_home() || is_front_page() ) : ?>
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/style.css'); ?>">
@@ -77,6 +78,32 @@
         </a>
       </div>
     </nav>
+    <nav class="to-sp">
+      <div class="main-menu-container">
+        <input id="menu-toggle" type="checkbox">
+        <label for="menu-toggle" class="menu-button-container">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="menu-link">トップページ</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/aboutus/')); ?>" class="menu-link">Makkei Baseball Academyとは</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/price/')); ?>" class="menu-link">料金プラン</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/voice/')); ?>" class="menu-link">利用者の声</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="menu-link">ブログ</a>
+          </li>
+          <li class="menu-item">
+            <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="menu-link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
-  <!-- パンクズリスト -->
-  <!-- <?php breadcrumb(); ?> -->

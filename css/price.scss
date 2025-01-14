@@ -3,33 +3,95 @@
 /* ***************************************************************** 
 *	下層ページ 説明セクション
 * ***************************************************************** */
-#subpage-explanation {
-  & .obj__inner {
-    & .obj-right {
-      position: absolute;
-      top: 0%;
-      right: -14%;
-      width: 280px;
-    }
-    & .obj-left {
-      position: absolute;
-      top: 0%;
-      left: -14%;
-      width: 240px;
-    }
-  }
-}
+// #subpage-explanation {
+//   & .obj__inner {
+//     & .obj-right {
+//       position: absolute;
+//       top: 0%;
+//       right: -14%;
+//       width: 280px;
+//     }
+//     & .obj-left {
+//       position: absolute;
+//       top: 0%;
+//       left: -14%;
+//       width: 240px;
+//     }
+//   }
+// }
 
 
 /* ***************************************************************** 
 *	下層ページ レッスン
 * ***************************************************************** */
 #lesson {
-  margin-bottom: 104px;
+  & .price-object-topLeft {
+    position: absolute;
+    width: 240px;
+    top: -20%;
+    left: -6%;
+    @include max(md) {
+      width: 160px;
+      top: -8%;
+    }
+    @include max(sm) {
+      width: 104px;
+      top: -4%;
+    }
+  }
+  & .price-object-topRight {
+    position: absolute;
+    width: 80px;
+    top: -8%;
+    right: 20%;
+    @include max(md) {
+      width: 64px;
+      top: 0%;
+      right: 16%;
+    }
+    @include max(sm) {
+      width: 48px;
+      top: 2%;
+      right: 4%;
+    }
+  }
+  & .price-object-bottomLeft {
+    position: absolute;
+    width: 136px;
+    bottom: -10%;
+    left: 6%;
+    @include max(md) {
+      width: 104px;
+      bottom: 0%;
+      left: -2%;
+    }
+    @include max(sm) {
+      width: 80px;
+      bottom: -2%;
+      z-index: -10;
+    }
+  }
+  & .price-object-bottomRight {
+    position: absolute;
+    width: 160px;
+    bottom: -8%;
+    right: 0%;
+    @include max(md) {
+      width: 104px;
+      bottom: 8%;
+      right: -2%;
+    }
+    @include max(sm) {
+      width: 64px;
+    }
+  }
   & .lesson-container {
     &.diagonal-layout {
       & .image-left {
         width: 60%;
+        @include max(md) {
+          width: 100%;
+        }
       }
     }
   }
@@ -40,19 +102,41 @@
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    @include max(md) {
+      width: 100%;
+      padding: 0;
+      margin-top: 32px;
+      gap: 24px;
+    }
     &-title {
       width: 320px;
+      @include max(md) {
+        width: 320px;
+      }
+      @include max(sm) {
+        width: 280px;
+      }
     }
     &-price {
       font-size: 28px;
       font-weight: $font-weight-medium;
       color: $main-color;
+      @include max(md) {
+        font-size: 24px;
+      }
+      @include max(sm) {
+        font-size: 20px;
+      }
     }
     &-text {
       line-height: 2;
       padding: 40px;
       background-color: $main-color;
       color: $color-white;
+      @include max(sm) {
+        width: 100%;
+        padding: 40px;
+      }
     }
   }
 }
@@ -61,16 +145,36 @@
 *	下層ページ スケジュール
 * ***************************************************************** */
 #schedule {
-  margin-bottom: 104px;
+  & .schedule-object-bottomRight {
+    position: absolute;
+    width: 40px;
+    bottom: 5%;
+    right: 0%;
+    @include max(md) {
+      width: 32px;
+    }
+    @include max(sm) {
+      width: 28px;
+    }
+  }
   & .container {
     display: grid;
     gap: 56px;
+    @include max(md) {
+      gap: 32px;
+    }
+    @include max(sm) {
+      gap: 24px;
+    }
   }
   & .schedule-title {
     position: relative;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
     &-en {
-      width: 780px;
-      margin: 0 auto;
+      width: 100%;
     }
     &-jp {
       position: absolute;
@@ -78,10 +182,15 @@
       left: 50%;
       width: 200px;
       transform: translate(-50%, 0%);
+      @include max(sm) {
+        width: 180px;
+        transform: translate(-50%, -20%);
+      }
     }
   }
   & .week-schedule {
-    width: 780px;
+    max-width: 780px;
+    width: 100%;
     margin: 0 auto;
   }
   & .reservation {
@@ -93,29 +202,134 @@
 *	下層ページ 価格
 * ***************************************************************** */
 #price {
-  margin-bottom: 104px;
+  & .price-object-01 {
+    position: absolute;
+    width: 24px;
+    top: 5%;
+    left: 0%;
+    @include max(md) {
+      width: 16px;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 16px;
+    }
+  }
+  & .price-object-02 {
+    position: absolute;
+    width: 200px;
+    top: 35%;
+    left: -8%;
+    @include max(md) {
+      width: 124px;
+      left: -12%;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 96px;
+      left: unset;
+      right: -8%;
+    }
+  }
+  & .price-object-03 {
+    position: absolute;
+    width: 28px;
+    bottom: 20%;
+    left: 3%;
+    @include max(md) {
+      width: 24px;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 20px;
+    }
+  }
+  & .price-object-04 {
+    position: absolute;
+    width: 24px;
+    bottom: 35%;
+    right: 0%;
+    @include max(md) {
+      width: 20px;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 16px;
+    }
+  }
+  & .price-object-05 {
+    position: absolute;
+    width: 120px;
+    bottom: 0%;
+    left: 0%;
+    @include max(md) {
+      width: 80px;
+      bottom: -3%;
+      left: -6%;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 64px;
+    }
+  }
+  & .price-object-06 {
+    position: absolute;
+    width: 240px;
+    bottom: 0%;
+    right: 0%;
+    @include max(md) {
+      width: 144px;
+      bottom: -1%;
+      right: -8%;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 104px;
+    }
+  }
   & .price-container {
     & ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
+      @include max(md) {
+        gap: 32px;
+      }
+      @include max(sm) {
+        gap: 24px;
+      }
       & .price-item {
         width: calc(100% / 2 - 40px);
         height:auto;
         display:flex;/* 高さを揃えるための指定 */
         flex-direction:column;/* 高さを揃えるための指定 */
         gap: 24px;
+        @include max(md) {
+          width: calc(100% / 2 - 32px);
+        }
+        @include max(sm) {
+          width: 90%;
+        }
         &-text {
          &-title {
           color: $main-color;
           margin-bottom: 16px;
+          @include max(md) {
+            margin-bottom: 12px;
+          }
          } 
          &-dsc {
           & .emphasis {
             display: block;
             color: $main-color;
             font-size: 22px;
+            @include max(md) {
+              font-size: 18px;
+            }
+            @include max(sm) {
+              font-size: 16px;
+            }
             &.linking {
               & > span {
                 color: $font-color-normal;
@@ -126,6 +340,12 @@
           & .caution-note {
             display: block;
             font-size: $font-size-p03;
+            @include max(md) {
+              font-size: $font-size-p03-tab;
+            }
+            @include max(sm) {
+              font-size: $font-size-p03-sp;
+            }
           }
          }
         }

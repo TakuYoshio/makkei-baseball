@@ -36,12 +36,39 @@
             大変お手数ですが再度フォームから送信いただくか、お電話にてご連絡ください。
           </p>
         </div>
+        <div class="phone">
+          <div class="phone-icon">
+            <img src="<?php echo get_theme_file_uri('images/Contact/phone-icon.svg'); ?>" alt="tel-icon">
+          </div>
+          <div class="phone-text">
+            <div class="phone-text-businessHour">受付時間：9時〜20時</div>
+            <a href="tel:080-3328-8217" class="phone-text-number">080-3328-8217</a>
+          </div>
+        </div>
       </div>
       <div class="obj-right">
         <img src="<?php echo get_theme_file_uri('images/Aboutus/explanation-right.svg'); ?>" alt="">
       </div>
       <div class="obj-left">
         <img src="<?php echo get_theme_file_uri('images/Aboutus/explanation-left.svg'); ?>" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="reservation">
+    <div class="obj__inner">
+      <div class="container">
+        <div>
+          <h4 class="contact-form-title">予約フォーム</h4>
+        </div>
+        <!-- Begin TimeRex Widget -->
+          <div id="timerex_calendar" data-url="https://timerex.net/s/makkeibaseball_8ab5/b0bdcb14"></div>
+    
+          <script id="timerex_embed" src="https://asset.timerex.net/js/embed.js"></script>
+    
+          <script type="text/javascript">
+            TimerexCalendar();
+          </script>
+        <!-- End TimeRex Widget -->
       </div>
     </div>
   </section>
@@ -53,37 +80,6 @@
         </div>
         <div class="contact-form">
           <?php echo do_shortcode( '[contact-form-7 id="54e8e08" title="MAKKEI BASEBALL ACADEMY-ContactFrom"]' ); ?>
-          <!-- <dl>
-            <dt class="label label-req">
-              名前
-              <span class="required">必須</span>
-            </dt>
-            <dd class="field field-req">
-              <input type="text" id="name" name="お名前" placeholder="山田 太郎">
-            </dd>
-            <dt class="label label-req">
-              メールアドレス
-              <span class="required">必須</span>
-            </dt>
-            <dd class="field field-req">
-              <input type="email" id="email" name="メールアドレス" placeholder="sample@sample.co.jp">
-            </dd>
-            <dt class="label">
-              電話番号
-            </dt>
-            <dd  class="field">
-              <input type="tel" id="tel" name="電話番号" placeholder="080-1111-1111">
-            </dd>
-            <dt class="label">
-              お問い合わせ
-            </dt>
-            <dd class="field text-area">
-              <textarea name="request" id="request"></textarea>
-            </dd>
-          </dl>
-          <div class="submit-container">
-            <input type="submit" class="submit-container-btn" value="送信する">
-          </div> -->
         </div>
       </div>
     </div>

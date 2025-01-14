@@ -3,32 +3,114 @@
 /* ***************************************************************** 
 *	下層ページ 説明セクション
 * ***************************************************************** */
-#subpage-explanation {
-  & .obj__inner {
-    & .obj-right {
-      position: absolute;
-      top: 0%;
-      right: -14%;
-      width: 280px;
-    }
-    & .obj-left {
-      position: absolute;
-      top: 0%;
-      left: -14%;
-      width: 240px;
-    }
-  }
-}
+// #subpage-explanation {
+//   & .obj__inner {
+//     & .obj-right {
+//       position: absolute;
+//       top: 0%;
+//       right: -14%;
+//       width: 280px;
+//     }
+//     & .obj-left {
+//       position: absolute;
+//       top: 0%;
+//       left: -14%;
+//       width: 240px;
+//     }
+//   }
+// }
 
 /* ***************************************************************** 
 *	下層ページ ブログ
 * ***************************************************************** */
 #blog-contents {
-  margin-bottom: 104px;
+  & .blog-object-01 {
+    position: absolute;
+    width: 48px;
+    top: 5%;
+    left: 0%;
+    @include max(md) {
+      width: 40px;
+    }
+    @include max(sm) {
+      width: 32px;
+    }
+  }
+  & .blog-object-02 {
+    position: absolute;
+    width: 220px;
+    top: 5%;
+    right: -12%;
+    @include max(md) {
+      width: 144px;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 104px;
+    }
+  }
+  & .blog-object-03 {
+    position: absolute;
+    width: 80px;
+    top: 35%;
+    left: 0%;
+    @include max(md) {
+      width: 64px;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 48px;
+    }
+  }
+  & .blog-object-04 {
+    position: absolute;
+    width: 80px;
+    top: 65%;
+    right: 0%;
+    @include max(md) {
+      width: 64px;
+      z-index: -10;
+    }
+    @include max(sm) {
+      width: 48px;
+    }
+  }
+  & .blog-object-05 {
+    position: absolute;
+    width: 220px;
+    bottom: -6%;
+    left: -8%;
+    @include max(md) {
+      width: 144px;
+      left: -12%;
+    }
+    @include max(sm) {
+      width: 104px;
+    }
+  }
+  & .blog-object-06 {
+    position: absolute;
+    width: 32px;
+    bottom: -4%;
+    right: 0%;
+    @include max(md) {
+      width: 28px;
+      bottom: 3%;
+    }
+    @include max(sm) {
+      width: 24px;
+    }
+  }
   & .article-container {
     width: 100%;
     display: grid;
     gap: 56px;
+    @include max(md) {
+      gap: 40px;
+    }
+    @include max(sm) {
+      gap: 32px;
+    }
     &-tab {
       width: 100%;
       & ul {
@@ -36,6 +118,9 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 16px;
+        @include max(sm) {
+          gap: 12px;
+        }
       }
       &-item {
         width: 180px;
@@ -46,6 +131,15 @@
         color: $main-color;
         font-size: $font-size-p03;
         font-weight: $font-weight-semi-bold;
+        @include max(md) {
+          width: 168px;
+          font-size: $font-size-p03-tab;
+        }
+        @include max(sm) {
+          width: 144px;
+          padding: 8px 12px;
+          font-size: $font-size-p03-sp;
+        }
         &.active {
           background-color: $main-color;
           color: $color-white;
@@ -59,10 +153,19 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 常に3分割 */
         gap: 32px;
+        @include max(md) {
+          grid-template-columns: repeat(2, 1fr); /* 常に3分割 */
+        }
+        @include max(sm) {
+          gap: 16px;
+        }
       }
       &-item {
         width: 100%;
         padding: 16px;
+        @include max(sm) {
+          padding: 16px 0;
+        }
         &-thumbnail {
           width: 100%;
           aspect-ratio: 4 / 3;
@@ -76,6 +179,12 @@
           width: 100%;
           &-date {
             font-size: 14px;
+            @include max(md) {
+              font-size: 13px;
+            }
+            @include max(sm) {
+              font-size: 12px;
+            }
           }
           &-title {
             color: $main-color;
@@ -84,6 +193,9 @@
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 1; /* 行数を指定 */
+            @include max(sm) {
+              margin-bottom: 12px;
+            }
           }
           &-desc {
             font-size: $font-size-p03;
@@ -91,6 +203,12 @@
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3; /* 行数を指定 */
+            @include max(md) {
+              font-size: $font-size-p03-tab;
+            }
+            @include max(sm) {
+              font-size: $font-size-p03-sp;
+            }
           }
         }
       }
@@ -101,6 +219,12 @@
       justify-content: center;
       align-items: center;
       gap: 16px;
+      @include max(md) {
+        margin-top: 32px;
+      }
+      @include max(sm) {
+        margin-top: 28px;
+      }
       & .page-numbers {
         display: flex;
         justify-content: center;
@@ -110,6 +234,16 @@
         height: 40px;
         border-radius: 100px;
         border: 1px solid $main-color;
+        @include max(md) {
+          width: 32px;
+          height: 32px;
+          font-size: $font-size-p03-tab;
+        }
+        @include max(sm) {
+          width: 24px;
+          height: 24px;
+          font-size: $font-size-p03-sp;
+        }
         &.current {
           color: $color-white;
           background-color: $main-color;
@@ -120,6 +254,12 @@
           font-weight: $font-weight-medium;
           gap: 8px;
           margin-right: 32px;
+          @include max(md) {
+            margin-right: 24px;
+          }
+          @include max(sm) {
+            margin-right: 20px;
+          }
           & img {
             width: 8px;
           }
@@ -130,6 +270,12 @@
           font-weight: $font-weight-medium;
           gap: 8px;
           margin-left: 32px;
+          @include max(md) {
+            margin-left: 24px;
+          }
+          @include max(sm) {
+            margin-left: 20px;
+          }
           & img {
             width: 8px;
           }
