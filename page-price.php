@@ -62,7 +62,6 @@
             <div class="lesson-contents-text">
               週1回の技術指導<br>
               施設24時間365日使い放題<br>
-              限定グラブ販売<br>
               月1回のフィジカルテスト実施<br>
               inBodyによる体組成チェック<br>
               サプリメント飲み放題<br>

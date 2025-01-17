@@ -53,14 +53,16 @@ function fetch_filtered_articles() {
             $query->the_post();
             ?>
             <li class="article-container-contents-item">
-                <div class="article-container-contents-item-thumbnail">
-                    <?php the_post_thumbnail(); ?>
-                </div>
-                <div class="article-container-contents-item-text">
-                    <p class="article-container-contents-item-text-date"><?php the_time('Y.m.d'); ?></p>
-                    <h6 class="article-container-contents-item-text-title"><?php the_title(); ?></h6>
-                    <p class="article-container-contents-item-text-desc"><?php echo wp_strip_all_tags(get_the_excerpt()); ?></p>
-                </div>
+                <a href="<?php the_permalink(); ?>" class="article-link">
+                    <div class="article-container-contents-item-thumbnail">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                    <div class="article-container-contents-item-text">
+                        <p class="article-container-contents-item-text-date"><?php the_time('Y.m.d'); ?></p>
+                        <h6 class="article-container-contents-item-text-title"><?php the_title(); ?></h6>
+                        <p class="article-container-contents-item-text-desc"><?php echo wp_strip_all_tags(get_the_excerpt()); ?></p>
+                    </div>
+                </a>
             </li>
             <?php
         }

@@ -81,15 +81,15 @@
       <div class="rapsodo-contents">
         <ul>
           <li>
-            <img class="rapsodo-contents-background" src="<?php echo get_theme_file_uri('images/2x/バッティング.JPG'); ?>" alt="バッティング">
+            <img class="rapsodo-contents-background" src="<?php echo get_theme_file_uri('images/2x/バッティング.jpg'); ?>" alt="バッティング">
             <img class="rapsodo-contents-text" src="<?php echo get_theme_file_uri('images/SVG/バッティング-text.svg'); ?>" alt="バッティング">
           </li>
           <li>
-            <img class="rapsodo-contents-background" src="<?php echo get_theme_file_uri('images/2x/ピッチング.JPG'); ?>" alt="ピッチング">
-            <img class="rapsodo-contents-text" src="<?php echo get_theme_file_uri('images/SVG/ピッチング-text.svg'); ?>" alt="ピッチング">
+            <img class="rapsodo-contents-background" src="<?php echo get_theme_file_uri('images/2x/ピッチング.jpg'); ?>" alt="ピッチング">
+            <img class="rapsodo-contents-text" src="<?php echo get_theme_file_uri('images/SVG/ピッチング-text.svg'); ?>" alt="ピッチング">
           </li>
           <li>
-            <img class="rapsodo-contents-background" src="<?php echo get_theme_file_uri('images/2x/スローモーション.JPG'); ?>" alt="スローモーション">
+            <img class="rapsodo-contents-background" src="<?php echo get_theme_file_uri('images/2x/スローモーション.jpg'); ?>" alt="スローモーション">
             <img class="rapsodo-contents-text" src="<?php echo get_theme_file_uri('images/SVG/スローモーション-text.svg'); ?>" alt="スローモーション">
           </li>
         </ul>

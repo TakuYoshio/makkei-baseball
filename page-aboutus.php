@@ -121,7 +121,7 @@
             </div>
             <div class="about-rapsodo-item-images">
               <div class="about-rapsodo-item-images-img">
-                <img src="<?php echo get_theme_file_uri('images/Aboutus/バッティング.JPG'); ?>" alt="バッティング">
+                <img src="<?php echo get_theme_file_uri('images/2x/バッティング.jpg'); ?>" alt="バッティング">
               </div>
               <div class="about-rapsodo-item-images-num">
                 <img src="<?php echo get_theme_file_uri('images/Aboutus/ラプソード01.svg'); ?>" alt="01">
@@ -151,7 +151,7 @@
             </div>
             <div class="about-rapsodo-item-images">
               <div class="about-rapsodo-item-images-img">
-                <img src="<?php echo get_theme_file_uri('images/Aboutus/ピッチング.JPG'); ?>" alt="バッティング">
+                <img src="<?php echo get_theme_file_uri('images/2x/ピッチング.jpg'); ?>" alt="バッティング">
               </div>
               <div class="about-rapsodo-item-images-num">
                 <img src="<?php echo get_theme_file_uri('images/Aboutus/ラプソード02.svg'); ?>" alt="01">
@@ -178,7 +178,7 @@
             </div>
             <div class="about-rapsodo-item-images">
               <div class="about-rapsodo-item-images-img">
-                <img src="<?php echo get_theme_file_uri('images/Aboutus/スローモーション.JPG'); ?>" alt="バッティング">
+                <img src="<?php echo get_theme_file_uri('images/2x/スローモーション.jpg'); ?>" alt="バッティング">
               </div>
               <div class="about-rapsodo-item-images-num">
                 <img src="<?php echo get_theme_file_uri('images/Aboutus/ラプソード03.svg'); ?>" alt="01">
