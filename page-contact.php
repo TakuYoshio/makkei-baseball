@@ -72,22 +72,23 @@
       </div>
     </div>
   </section>
-  <section id="contact-form">
+  <!-- <section id="contact-form">
     <div class="obj__inner">
       <div class="container">
         <div>
           <h4 class="contact-form-title">お問い合わせフォーム</h4>
         </div>
         <div class="contact-form">
-          <!-- ローカル環境 （iMac） -->
-          <!-- <?php echo do_shortcode( '[contact-form-7 id="54e8e08" title="MAKKEI BASEBALL ACADEMY-ContactFrom"]' ); ?> -->
-          <!-- 本番環境 -->
+          本番環境
           <?php echo do_shortcode( '[contact-form-7 id="b57eb88" title="MAKKEI BASEBALL ACADEMY-ContactFrom"]' ); ?>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>
 
 <!-- Footer -->
 <?php get_footer(); ?>
+      
+      <!-- ローカル環境 （iMac） -->
+      <!-- <?php echo do_shortcode( '[contact-form-7 id="54e8e08" title="MAKKEI BASEBALL ACADEMY-ContactFrom"]' ); ?> -->

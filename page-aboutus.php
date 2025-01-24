@@ -61,7 +61,7 @@
             <div class="profile-item">
               <div class="profile-name">
                 <h5 class="profile-name-jp">武田　浩紀</h5>
-                <span class="profile-name-en">Hironori Takeda</span>
+                <span class="profile-name-en">Haruki Takeda</span>
               </div>
               <div class="profile-text">
                 <p class="text-s">

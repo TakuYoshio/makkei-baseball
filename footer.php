@@ -27,7 +27,7 @@
   </div>
 </section>
 
-<section id="cta">
+<section id="cta" class="diaplay-none">
       <div class="obj__inner">
         <div class="container">
           <div class="cta-contents">
