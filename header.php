@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
+<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('css/common.css')); ?>">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
   <!-- Style CSS 適用 -->
   <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/common.css'); ?>">
-  <script src="js/main.js"></script>
+  <script src="<?php echo esc_url(get_theme_file_uri('js/main.js')); ?>"></script>
   <?php /*?>トップページの場合<?php */?>
   <?php if ( is_home() || is_front_page() ) : ?>
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/style.css'); ?>">
@@ -23,7 +25,7 @@
   <?php endif; ?>
   <?php if ( is_page('blog') ): ?>
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/blog.css'); ?>">
-    <script src="js/blog.js"></script>
+    <script src="<?php echo esc_url(get_theme_file_uri('js/blog.js')); ?>"></script>
     <script>
       var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
       </script>

@@ -47,7 +47,7 @@
         <div class="lesson-container diagonal-layout">
           <div class="image-left">
             <div class="image-left__inner">
-              <img src="<?php echo get_theme_file_uri('images/Price/レッスンについて.JPG'); ?>" alt="レッスンについて">
+              <img src="<?php echo get_theme_file_uri('images/Price/レッスンについて.jpg'); ?>" alt="レッスンについて">
             </div>
           </div>
           <div class="lesson-contents">

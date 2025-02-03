@@ -9,7 +9,7 @@
         <img src="<?php echo get_theme_file_uri('images/SVG/Aboutus-fv.svg'); ?>" alt="About us" class="subpage-title-en">
       </div>
       <div class="subpage-fkv-container-right">
-        <img src="<?php echo get_theme_file_uri('images/Aboutus/Aboutus-fkv.JPG'); ?>" alt="About us" class="subpage-fkv-container-right-image">
+        <img src="<?php echo get_theme_file_uri('images/Aboutus/Aboutus-fkv.jpg'); ?>" alt="About us" class="subpage-fkv-container-right-image">
         <img src="<?php echo get_theme_file_uri('images/SVG/kasou-academy-name.svg'); ?>" alt="name" class="subpage-fkv-container-right-name">
       </div>
     </div>
@@ -52,7 +52,7 @@
       <div class="container">
         <div class="profile-container">
           <div class="profile-img">
-            <img src="<?php echo get_theme_file_uri('images/Aboutus/profile-img.JPG'); ?>" alt="profile image">
+            <img src="<?php echo get_theme_file_uri('images/Aboutus/profile-img.jpg'); ?>" alt="profile image">
           </div>
           <div class="profile-contents">
             <div class="profile-title">

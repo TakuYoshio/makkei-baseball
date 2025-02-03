@@ -9,7 +9,7 @@
         <img src="<?php echo get_theme_file_uri('images/SVG/UserVoice-fv.svg'); ?>" alt="User Voice" class="subpage-title-en">
       </div>
       <div class="subpage-fkv-container-right">
-        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-fkv.JPG'); ?>" alt="User Voice" class="subpage-fkv-container-right-image">
+        <img src="<?php echo get_theme_file_uri('images/Voice/Voice-fkv.jpg'); ?>" alt="User Voice" class="subpage-fkv-container-right-image">
         <img src="<?php echo get_theme_file_uri('images/SVG/kasou-academy-name.svg'); ?>" alt="name" class="subpage-fkv-container-right-name">
       </div>
     </div>

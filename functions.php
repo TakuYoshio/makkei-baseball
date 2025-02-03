@@ -1,7 +1,7 @@
-<!-- /* ************************************************ 
-*	JSファイル読み込み
-* ************************************************ */ -->
 <?php
+/* ************************************************ 
+*	JSファイル読み込み
+* ************************************************ */
 function enqueue_blog_scripts() {
     // JavaScript ファイルをキューに追加
     wp_enqueue_script(
@@ -16,20 +16,15 @@ function enqueue_blog_scripts() {
         wp_localize_script('blog-script', 'ajaxurl', admin_url('admin-ajax.php'));
     }
     add_action('wp_enqueue_scripts', 'enqueue_blog_scripts');
-?>
 
-<?php
 function enqueue_scripts() {
     wp_enqueue_script('hamburger-menu', get_template_directory_uri() . '/js/hamburger.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
-?>
     
-
-<!-- /* ************************************************ 
+/* ************************************************ 
 *	記事一覧表示
-* ************************************************ */ -->
-<?php
+* ************************************************ */
 function fetch_filtered_articles() {
     $category_id = isset($_POST['category_id']) ? intval($_POST['category_id']) : 0;
     $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
@@ -90,22 +85,18 @@ function fetch_filtered_articles() {
 }
 add_action('wp_ajax_fetch_filtered_articles', 'fetch_filtered_articles');
 add_action('wp_ajax_nopriv_fetch_filtered_articles', 'fetch_filtered_articles');
-?>
 
-<!-- /* ************************************************ 
+/* ************************************************ 
 *	サムネイル画像の幅、高さの自動設定削除
-* ************************************************ */ -->
-<?php
+* ************************************************ */
 function dequeue_intrinsic_size_styles() {
     wp_dequeue_style('wp-block-library'); // ブロックエディタ関連のスタイルを削除
 }
 add_action('wp_enqueue_scripts', 'dequeue_intrinsic_size_styles', 20);
-?>
 
-<!-- /* ************************************************ 
+/* ************************************************ 
 *	Contact Form 7で自動挿入されるPタグ、brタグを削除
-* ************************************************ */ -->
-<?php 
+* ************************************************ */
     add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
     function wpcf7_autop_return_false() {
     return false;
