@@ -96,7 +96,15 @@
           </div>
         </div>
         <div class="week-schedule">
-          <img src="<?php echo get_theme_file_uri('images/Price/スケジュール.jpg'); ?>" alt="スケジュール">
+          <div class="caution">
+            <h4 class="caution-title">＼ 7月からの新クラス、先行予約受付中！ ／</h4>
+            <p class="caution-text">
+              スケジュール表に記載のクラスについて、<br>
+              ホームページをご覧の方限定で先行予約を承っております。<br>
+              ご希望のクラスがございましたら、お気軽にご連絡ください！
+            </p>
+          </div>
+          <img src="<?php echo get_theme_file_uri('images/Price/Schedule_20250413.jpg'); ?>" alt="スケジュール">
         </div>
         <div class="reservation">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="primary-btn">

@@ -226,16 +226,6 @@ section {
 .primary-btn-icon.thanks-btn-icon {
   width: 18px;
 }
-@media (max-width: 768px) {
-  .primary-btn-icon {
-    width: 16px;
-  }
-}
-@media (max-width: 460px) {
-  .primary-btn-icon {
-    width: 14px;
-  }
-}
 
 .secondary-btn {
   background-color: #c70019;

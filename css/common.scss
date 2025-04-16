@@ -172,12 +172,12 @@ section {
     &.thanks-btn-icon {
       width: 18px;
     }
-    @include max(md) {
-      width: 16px;
-    }
-    @include max(sm) {
-      width: 14px;
-    }
+    // @include max(md) {
+    //   width: 16px;
+    // }
+    // @include max(sm) {
+    //   width: 14px;
+    // }
   }
 }
 .secondary-btn {
