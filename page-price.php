@@ -104,7 +104,7 @@
               ご希望のクラスがございましたら、お気軽にご連絡ください！
             </p>
           </div>
-          <img src="<?php echo get_theme_file_uri('images/Price/Schedule_20250413.jpg'); ?>" alt="スケジュール">
+          <img src="<?php echo get_theme_file_uri('images/Price/Schedule_20250720.jpg'); ?>" alt="スケジュール">
         </div>
         <div class="reservation">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="primary-btn">
