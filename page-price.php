@@ -97,14 +97,14 @@
         </div>
         <div class="week-schedule">
           <div class="caution">
-            <h4 class="caution-title">＼ 7月からの新クラス、先行予約受付中！ ／</h4>
+            <h4 class="caution-title">＼ 2026年2月からの新クラス！ ／</h4>
             <p class="caution-text">
               スケジュール表に記載のクラスについて、<br>
               ホームページをご覧の方限定で先行予約を承っております。<br>
               ご希望のクラスがございましたら、お気軽にご連絡ください！
             </p>
           </div>
-          <img src="<?php echo get_theme_file_uri('images/Price/Schedule_20250720.jpg'); ?>" alt="スケジュール">
+          <img src="<?php echo get_theme_file_uri('images/Price/Schedule_20260208.jpg'); ?>" alt="スケジュール">
         </div>
         <div class="reservation">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="primary-btn">
